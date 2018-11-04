@@ -7,6 +7,11 @@ spring:
     username: root
     password: root
     url: jdbc:mysql://127.0.0.1:3306/cloud_sell?characterEncoding=utf-8&useSSL=false
+  rabbitmq:
+    host: 192.168.25.131
+    port: 5672
+    username: admin
+    password: root 
 eureka:
   client:
     service-url:
