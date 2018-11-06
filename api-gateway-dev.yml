@@ -1,0 +1,20 @@
+zuul:
+  # 忽略全部服务敏感头设置（全部服务都可传递cookie）
+  sensitive-headers:
+  routes:
+    # 自定义配置路由
+#    aaaaa:
+#      path: /myProduct/**
+#      serviceId: product
+    # 简洁写法
+    product: /myProduct/**
+#      sensitiveHeaders:
+    # 配置忽略路径（匹配这个不进行路由）
+#  ignored-patterns:
+#    - /product/product/listForOrder
+#    - /**/product/listForOrder
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
