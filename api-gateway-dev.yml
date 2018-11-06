@@ -1,3 +1,18 @@
+spring:
+  profiles: dev
+  application:
+    name: order
+  rabbitmq:
+    host: 192.168.25.131
+    port: 5672
+    username: admin
+    password: root  
+  redis:
+    host: 192.168.25.131
+    port: 6379
+    password: corner666  
+server:
+  connection-timeout: 20000    
 zuul:
   # 忽略全部服务敏感头设置（全部服务都可传递cookie）
   sensitive-headers:
