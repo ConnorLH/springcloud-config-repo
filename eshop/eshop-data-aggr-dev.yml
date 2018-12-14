@@ -15,8 +15,8 @@ spring:
         max-idle: 100
         min-idle: 20
         # 最小空闲连接数
-    rabbitmq:
-      host: 192.168.25.133
-      port: 5672  
-      username: admin  
-      password: 123
+  rabbitmq:
+    host: 192.168.25.133
+    port: 5672  
+    username: admin  
+    password: 123
